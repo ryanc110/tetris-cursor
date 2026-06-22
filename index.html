@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테트리스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>테트리스</h1>
+    </header>
+
+    <main class="game-layout">
+      <section class="board-section">
+        <div id="game-board" class="game-board" aria-label="테트리스 게임 보드"></div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="panel">
+          <h2>점수</h2>
+          <p class="score-value" id="score">0</p>
+        </div>
+
+        <div class="panel controls-panel">
+          <button type="button" id="start-btn" class="btn btn-primary">시작</button>
+          <button type="button" id="restart-btn" class="btn btn-secondary">재시작</button>
+        </div>
+
+        <div class="panel help-panel">
+          <h2>조작법</h2>
+          <ul>
+            <li><kbd>←</kbd> (ArrowLeft) : 왼쪽 이동</li>
+            <li><kbd>→</kbd> (ArrowRight) : 오른쪽 이동</li>
+            <li><kbd>↓</kbd> (ArrowDown) : 한 칸 빠르게 내리기</li>
+            <li><kbd>↑</kbd> (ArrowUp) : 블록 회전</li>
+            <li><kbd>Space</kbd> : 즉시 낙하 (Hard Drop)</li>
+          </ul>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <p id="status-message">시작 버튼을 눌러 게임을 시작하세요.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
